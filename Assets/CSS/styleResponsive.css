@@ -200,19 +200,15 @@ header .navbar .container {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 76.8rem) {
     .notice-bar {
-        font-size: 0.85rem;
+        font-size: 1.4rem;
     }
 
     .notice-bar .container {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
-    }
-
-    .contacts a {
-        margin-right: 1rem;
     }
 
     .hamburger {
@@ -336,9 +332,12 @@ header .navbar .navmenu ul {
 
 /* Header Navbar End */
 
+/* ****************************************************** */
 
 /* Hero Section Start */
-#hero-section .container {
+
+/* Hero Section Bg & Keyframes Animation Start */
+#hero-section {
     /* bg-img */
     background-size: cover;
     background-position: center;
@@ -348,9 +347,9 @@ header .navbar .navmenu ul {
     text-align: center;
 
     /* box-model */
-    width: 88%;
-    max-width: 132rem;
-    height: 70vh;
+    width: 100%;
+    margin: 0 auto;
+    height: 80vh;
 
     /* animation */
     animation: heroSlider 12s infinite ease-in-out;
@@ -363,63 +362,63 @@ header .navbar .navmenu ul {
 @keyframes heroSlider {
     0% {
         background-image:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
             url("../Images/Hero-Section/MosqueSmall.jpg");
     }
 
     20% {
         background-image:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
             url("../Images/Hero-Section/1.jpeg");
     }
 
     40% {
         background-image:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
             url("../Images/Hero-Section/2.jpg");
     }
 
     60% {
         background-image:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
             url("../Images/Hero-Section/3.jpeg");
     }
 
     80% {
         background-image:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
             url("../Images/Hero-Section/4.jpeg");
     }
 
     100% {
         background-image:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0. 8), rgba(0, 0, 0, 0.4)),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
             url("../Images/Hero-Section/5.jpeg");
     }
 }
 
+/* Hero Section Bg & Keyframes Animation End */
 
-/* Heading */
-#hero-section .hero-text {
-    padding: 2rem;
+
+/* Hero Section Heading Start */
+#hero-section .hero-section-heading {
+    padding: 2rem 0;
     position: relative;
 }
 
-#hero-section .hero-text h1 {
+#hero-section .hero-section-heading h1 {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 5.2rem;
+    letter-spacing: 1px;
 }
 
-#hero-section .hero-text p {
-    font-size: 2.2rem;
-}
+/* Hero Section Heading End */
 
-/* Slider Controls Button */
+/* Hero Section Slider Controls Button Start */
 #hero-section .slider-controls {
     /* box-model */
-    width: 100%;
-    max-width: 136rem;
-    padding: 0.8rem;
+    width: 95%;
+    opacity: 0.7;
 
     /* CSS Layout */
     display: flex;
@@ -435,29 +434,33 @@ header .navbar .navmenu ul {
 
 #hero-section .slider-btn-prev {
     /* position */
+    width: 4rem;
+    height: 4rem;
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(0, -50%);
 }
 
 #hero-section .slider-btn-next {
     /* position */
+    width: 4rem;
+    height: 4rem;
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translate(100%, -50%);
+    transform: translate(0, -50%);
 }
 
 #hero-section .slider-btn-prev,
 #hero-section .slider-btn-next {
     /* color */
-    background-color: transparent;
+    background-color: #334155;
     color: var(--hover-color);
 
     /* box-model */
-    padding: 0.4rem;
-    border: 0.1rem solid var(--hover-color);
+    padding: 0.6rem;
+    /* border: 0.1rem solid var(--hover-color); */
     border-radius: 100rem;
 
     /* font */
@@ -477,6 +480,8 @@ header .navbar .navmenu ul {
     color: #fff;
     /* transform: translateY(-1px); */
 }
+
+/* Hero Section Slider Controls Button End */
 
 /* Hero Section End */
 
