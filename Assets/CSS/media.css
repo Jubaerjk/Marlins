@@ -84,7 +84,7 @@
 
 @media (max-width: 48rem) {
     #hero-section {
-        height: 70vh;
+        height: 65vh;
     }
 }
 
@@ -151,14 +151,4 @@
     }
 }
 
-@media (max-width: 48rem) {
-    #projects .container .projects-content {
-        max-width: 100%;
-        gap: 1.6rem;
-    }
-
-    #projects .container .projects-content .project-item {
-        justify-content: center;
-        width: 100%;
-    }
-}
+@media (max-width: 48rem) {}
