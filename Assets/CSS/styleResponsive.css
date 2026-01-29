@@ -42,78 +42,166 @@ a {
   cursor: pointer;
 }
 
-
-
 /* ========================================================== 
    COMMON STYLES   
 ========================================================== */
 
 /* For Container */
 .container {
+  /* box-model */
   width: 100%;
   height: 100%;
   max-width: 136rem;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .section-title {
-  font-size: 3.2rem;
+  /* font */
+  font-size: clamp(2.4rem, 1.4rem + 2vw, 4rem);
+  letter-spacing: 0.1rem;
+
+  /* box-model */
   margin-bottom: 2.4rem;
+
+  /* text-align */
   text-align: center;
 }
 
 .floating-title {
-  font-size: 1.4rem;
+  /* font */
+  font-size: clamp(1.2rem, 1rem + 0.5vw, 1.6rem);
   font-weight: 400;
   text-transform: uppercase;
-  color: #fa5b2f;
   letter-spacing: 0.2rem;
+
+  /* color */
+  color: #fa5b2f;
+
+  /* text-align */
   text-align: center;
 }
 
 .middle-section {
+  /* box-model */
   padding: 5rem 0;
-  text-align: center;
+
+  /* font */
   font-size: 6rem;
   font-weight: 800;
+
+  /* color */
   color: transparent;
   -webkit-text-stroke: 0.1rem var(--light-color);
 }
 
 
 /* ========================================================== 
-   HERO SECTION
+   HERO SECTION with Navbar
 ========================================================== */
 
+/* ===========================
+   HERO SECTION
+=========================== */
 #hero-section {
-  position: relative;
+  /* box-model */
   height: 100vh;
   width: 100%;
   overflow: hidden;
+
+  /* color */
   color: #fff;
+
+  /* position */
+  position: relative;
 }
 
 /* Background Video */
 .hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  /* box-model */
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
+
+  /* position */
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  object-fit: cover;
   z-index: -2;
+
+  /* visual */
+  object-fit: cover;
 }
 
 /* Dark Overlay */
 #hero-section::after {
+  /* box-model */
   content: "";
+
+  /* position */
   position: absolute;
   inset: 0;
+
+  /* visual */
   background: rgba(0, 0, 0, 0.55);
+
+  /* z-index */
   z-index: -1;
+}
+
+.hero-section-heading {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.floating-title {
+  opacity: 0.85;
+}
+
+.hero-section-heading h1 {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+
+  /* font-size: clamp(2.5rem, 1.2rem + 2vw, 4.2rem); */
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 80rem;
+}
+
+/* =========================
+   SLIDER CONTROLS
+========================= */
+
+.slider-controls {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.slider-controls button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.slider-controls button:hover {
+  background: aqua;
+  color: #000;
+  transform: scale(1.05);
 }
 
 /* ===========================
@@ -187,10 +275,37 @@ a {
 }
 
 /* =========================
-   HAMBURGER
+   Mobile Nav
 ========================= */
 
-.hamburger {
+.navbar .btn-mobile-nav {
+  /* box-model */
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  /* position */
+  align-self: center;
+
+  /* z-index */
+  z-index: 15;
+}
+
+.navbar .icon-mobile-nav {
+  font-size: 3.2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar .icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.navbar .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
+
+/* .hamburger {
   display: none;
   flex-direction: column;
   gap: 0.5rem;
@@ -204,65 +319,13 @@ a {
   height: 0.3rem;
   background: #fff;
   border-radius: 0.3rem;
-}
+} */
 
 /* =========================
    HERO TEXT
 ========================= */
 
-.hero-section-heading {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-}
 
-.floating-title {
-  font-size: 1.2rem;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  opacity: 0.85;
-}
-
-.hero-section-heading h1 {
-  font-size: clamp(2.5rem, 5vw, 4.2rem);
-  font-weight: 700;
-  line-height: 1.2;
-  max-width: 80rem;
-}
-
-/* =========================
-   SLIDER CONTROLS
-========================= */
-
-.slider-controls {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  display: flex;
-  gap: 1rem;
-  z-index: 10;
-}
-
-.slider-controls button {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.slider-controls button:hover {
-  background: aqua;
-  color: #000;
-  transform: scale(1.05);
-}
 
 /* ========================================================== 
    Hero Section End

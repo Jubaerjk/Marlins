@@ -1,10 +1,10 @@
-const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementsByClassName("btn-mobile-nav");
 const navmenu = document.querySelector(".navmenu");
 
-hamburger.addEventListener("click", () => {
+mobileNav.addEventListener("click", () => {
     navmenu.classList.toggle("active");
 
     // Update accessibility attribute
-    const expanded = hamburger.getAttribute("aria-expanded") === "true";
-    hamburger.setAttribute("aria-expanded", !expanded);
+    const expanded = mobileNav.getAttribute("aria-expanded") === "true";
+    mobileNav.setAttribute("aria-expanded", !expanded);
 });
