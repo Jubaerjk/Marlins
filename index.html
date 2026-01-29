@@ -7,7 +7,7 @@
     <title>Solution Squad Design & Construction</title>
 
 
-    <link rel="shortcut icon" href="./Assets/Images/SSDC.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Assets/Images/SSDC.svg" type="image/x-icon">
 
     <!-- Offline CSS  -->
     <!-- <link rel="stylesheet" href="./Assets/CSS/style.css">
@@ -35,109 +35,71 @@
 <body>
 
     <header>
-        <!-- NOTICE BAR Start -->
-        <div class="notice-bar" role="banner">
-            <div class="container">
 
-                <!-- Notice Bar Left -->
-                <div class="contacts" aria-label="Contact Information">
-                    <a href="tel:01326480567" aria-label="Call 01326-480567">
-                        <i class="fa-solid fa-mobile"></i> 01326-480567
-                    </a>
-
-                    <a href="tel:01608383123" aria-label="Call 01608-383123">
-                        <i class="fa-solid fa-mobile"></i> 01608-383123
-                    </a>
-
-                    <a href="mailto:info.ssdcbd@gmail.com" target="_blank" aria-label="Email info@ssdcbd@gmail.com">
-                        <i class="fa-solid fa-envelope-circle-check"></i> info.ssdcbd@gmail.com
-                    </a>
-                </div>
-
-                <!-- Notice Bar Right -->
-                <div class="social-box" aria-label="Follow us on social media">
-                    <p><small>Follow Us On: </small></p>
-
-                    <div class="social-items" aria-label="Social Media Links">
-                        <a href="https://www.facebook.com/SSDCBD" target="_blank" rel="noopener noreferrer"
-                            aria-label="Facebook page" title="Facebook">
-                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                        </a>
-
-                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter page" title="Twitter">
-                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-                        </a>
-
-                        <a href="https://wa.me/+8801326480567" target="_blank" rel="noopener noreferrer"
-                            aria-label="WhatsApp link" title="WhatsApp">
-                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                        </a>
-
-                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram page"
-                            title="Instagram">
-                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                        </a>
-
-                        <a href="https://www.youtube.com/@SolutionSquadBD" target="_blank" rel="noopener noreferrer"
-                            aria-label="YouTube link" title="YouTube">
-                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- NOTICE BAR End -->
-
-
-        <!-- NAVBAR Start -->
-        <nav class="navbar" role="navigation" aria-label="Main Navigation">
-            <div class="container">
-
-                <div class="navbar-main">
-                    <!-- Logo -->
-                    <a href="index.html" class="logo">
-                        <img src="./Assets/Images/SSDC.png" width="40px" height="au" alt="SSDC Logo" loading="lazy">
-                    </a>
-                    <div class="navmenu">
-                        <ul>
-                            <li><a href="#hero-banner" class="active">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Service</a></li>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#project">Project</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- CTA  -->
-                <a href="#contact" class="btn navbar-btn">Contact Us</a>
-
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0"
-                    aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-            </div>
-        </nav>
-        <!-- NAVBAR End -->
-
-    </header>
-
-    <main>
-        <!-- Hero Section Start-->
+        <!-- Hero Section with Navbar Start-->
         <section id="hero-section">
+
+            <video class="hero-video" autoplay loop muted playsinline>
+                <source src="./Assets/Videos/hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
             <div class="container">
+
+                <!-- NAVBAR Start -->
+                <nav class="navbar" aria-label="Main Navigation">
+                    <div class="container">
+
+                        <div class="navbar-main">
+                            <!-- Logo -->
+                            <a href="index.html" class="logo">
+                                <img src="./Assets/Images/Asset 1.svg" alt="Marlings & Co Logo">
+                            </a>
+                            <div class="navmenu">
+                                <ul>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#services">Service</a></li>
+                                    <li><a href="#team">Team</a></li>
+                                    <li><a href="#projects">Project</a></li>
+                                    <li><a href="#blog">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- CTA  -->
+                        <a href="#contact" class="navbar-btn">Contact Us</a>
+
+                        <button class="hamburger" id="hamburger" aria-label="Toggle menu" tabindex="0"
+                            aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <button class="btn-mobile-nav">
+                            <svg name="menu-outline" height="30" viewBox="0 0 30 30" width="30"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M.5 24.006h29c.277 0 .5.223.5.5s-.223.5-.5.5H.5c-.277 0-.5-.223-.5-.5s.223-.5.5-.5zm0-10.003h29c.277 0 .5.223.5.5s-.223.5-.5.5H.5c-.277 0-.5-.223-.5-.5s.223-.5.5-.5zM.5 4h29c.277 0 .5.223.5.5s-.223.5-.5.5H.5C.223 5 0 4.777 0 4.5S.223 4 .5 4z" />
+                            </svg>
+
+                            <svg name="close-outline" height="30" viewBox="0 0 30 30" width="30"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M29.484 0c-.13.004-.252.057-.343.15L17.164 12.13c-.49.47.235 1.197.706.707L29.846.857c.325-.318.1-.857-.363-.857zM12.488 17c-.13.004-.25.058-.34.15L.162 29.14c-.486.467.233 1.186.7.7L12.848 17.85c.325-.313.093-.85-.36-.85zM.5 0a.5.5 0 0 0-.348.86L29.14 29.845a.5.5 0 1 0 .706-.706L.86.152A.5.5 0 0 0 .5 0z" />
+                            </svg>
+                        </button>
+
+                    </div>
+                </nav>
+                <!-- NAVBAR End -->
+
 
                 <div class="hero-section-heading">
-                    <p class="floating-title">~ Design that creates
-                        <span style="color: aqua;">an Impact</span>! ~
+                    <p class="floating-title" aria-hidden="true">~ Design that creates
+                        <span style="color: aqua;" aria-hidden="true">an Impact</span>! ~
                     </p>
                     <h1>
-                        Build Your Dream Home With Us
+                        Build Your Dream Space With Us
                     </h1>
                 </div>
 
@@ -156,17 +118,87 @@
         </section>
         <!-- Hero Section End-->
 
+    </header>
+
+    <main>
+
+        <section id="article">
+            <div class="container">
+
+                <div class="article-container">
+
+                    <div class="article-container-box">
+                        <div class="img">
+                            <img src="./Assets/Images/Marlins & Co.svg" alt="article image">
+                        </div>
+
+                        <div class="text">
+                            <h3>Article Heading</h3>
+                            <p>Article Subheading</p>
+                            <p>Article Para</p>
+                        </div>
+                    </div>
+
+                    <hr class="article-hr">
+
+                    <div class="article-container-box">
+                        <div class="img">
+                            <img src="./Assets/Images/Marlins & Co.svg" alt="article image">
+                        </div>
+
+                        <div class="text">
+                            <h3>Article Heading</h3>
+                            <p>Article Subheading</p>
+                            <p>Article Para</p>
+                        </div>
+                    </div>
+
+                    <hr class="article-hr">
+
+                    <div class="article-container-box">
+                        <div class="img">
+                            <img src="./Assets/Images/Marlins & Co.svg" alt="article image">
+                        </div>
+
+                        <div class="text">
+                            <h3>Article Heading</h3>
+                            <p>Article Subheading</p>
+                            <p>Article Para</p>
+                        </div>
+                    </div>
+
+                    <hr class="article-hr">
+
+                    <div class="article-container-box">
+                        <div class="img">
+                            <img src="./Assets/Images/Marlins & Co.svg" alt="article image">
+                        </div>
+
+                        <div class="text">
+                            <h3>Article Heading</h3>
+                            <p>Article Subheading</p>
+                            <p>Article Para</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
         <!-- About Section Start-->
         <section id="about">
             <div class="container">
 
                 <div class="section-img">
-                    <img src="./Assets/Images/Hero-Section/architect.jpeg" alt="">
+                    <img src="./Assets/Images/Marlins & Co.svg" alt="">
                 </div>
 
                 <div class="section-heading">
                     <p class="floating-title">~ About Us ~</p>
-                    <h2 class="section-title">Solution Squad Design & Construction</h2>
+                    <h2 class="section-title">Marlings & Co</h2>
                     <p class="section-para para-1">
                         We are a multidisciplinary design and engineering firm offering architectural design, structural
                         engineering, and construction supervision services. Our work is driven by technical excellence,
@@ -232,7 +264,7 @@
                             <div class="service-item item-01">
                                 <div class="service-item-header">
                                     <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="">
+                                        <img src="./Assets/Images/property.png" alt="service-icon">
                                     </div>
                                     <h3 class="service-item-heading">2D & 3D Design</h3>
                                 </div>
@@ -251,7 +283,7 @@
                             <div class="service-item item-02">
                                 <div class="service-item-header">
                                     <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="" width="100%" height="auto">
+                                        <img src="./Assets/Images/property.png" alt="service-icon">
                                     </div>
                                     <h3 class="service-item-heading">2D & 3D Design</h3>
                                 </div>
@@ -270,7 +302,7 @@
                             <div class="service-item item-03">
                                 <div class="service-item-header">
                                     <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="" width="100%" height="auto">
+                                        <img src="./Assets/Images/property.png" alt="service-icon">
                                     </div>
                                     <h3 class="service-item-heading">2D & 3D Design</h3>
                                 </div>
@@ -289,7 +321,7 @@
                             <div class="service-item item-04">
                                 <div class="service-item-header">
                                     <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="" width="100%" height="auto">
+                                        <img src="./Assets/Images/property.png" alt="service-icon">
                                     </div>
                                     <h3 class="service-item-heading">2D & 3D Design</h3>
                                 </div>
@@ -308,7 +340,7 @@
                             <div class="service-item item-05">
                                 <div class="service-item-header">
                                     <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="" width="100%" height="auto">
+                                        <img src="./Assets/Images/property.png" alt="service-icon">
                                     </div>
                                     <h3 class="service-item-heading">2D & 3D Design</h3>
                                 </div>
@@ -327,7 +359,7 @@
                             <div class="service-item item-06">
                                 <div class="service-item-header">
                                     <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="" width="100%" height="auto">
+                                        <img src="./Assets/Images/property.png" alt="service-icon">
                                     </div>
                                     <h3 class="service-item-heading">2D & 3D Design</h3>
                                 </div>
@@ -376,9 +408,54 @@
 
                         <div class="project-item-content">
                             <h4 style="color: #fff;font-size: 1.6rem;"><i class="fa-regular fa-house"> </i>LA SPACE</h4>
-                            <p class="project-text" style="color: #fff; font-size: 1.2rem;"><i
-                                    class="fa-solid fa-location-dot"></i> Luxury resident complex in
-                                Boshundhara R/A
+                            <p class="project-text" style="color: #fff; font-size: 1.2rem;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Luxury resident complex in Boshundhara R/A
+                            </p>
+
+                            <div class="title-description" style="display: flex;">
+                                <p class="title" style="margin-right: 10px; color: #a5a2a2;">
+                                    Client:
+                                </p>
+                                <p class="description" style="color: #fff; font-weight: 600;">
+                                    SSDC
+                                </p>
+
+                            </div>
+                            <div class="title-description" style="display: flex;">
+                                <p class="title" style="margin-right: 10px; color: #a5a2a2;">
+                                    Duration:
+                                </p>
+                                <p class="description" style="color: #fff; font-weight: 600;">
+                                    2 years
+                                </p>
+                            </div>
+                            <div class="title-description" style="display: flex;">
+                                <p class="title" style="margin-right: 10px; color: #a5a2a2;">
+                                    Status:
+                                </p>
+                                <p class="description" style="color: #fff; font-weight: 600;">
+                                    Completed
+                                </p>
+                            </div>
+
+                            <!-- 
+                            !new tab with js 
+                            -->
+                            <button class="project-btn">
+                                Explore More
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="project-item item-02">
+
+                        <div class="project-item-content">
+                            <h4 style="color: #fff;font-size: 1.6rem;"><i class="fa-regular fa-house"> </i>LA SPACE</h4>
+                            <p class="project-text" style="color: #fff; font-size: 1.2rem;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Luxury resident complex in Boshundhara R/A
                             </p>
 
                             <div class="title-description" style="display: flex;">
@@ -392,7 +469,7 @@
                             </div>
                             <div class="title-description" style="display: flex;">
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
-                                    Duration
+                                    Duration:
                                 </p>
                                 <p class="description" style="color: #fff; font-weight: 600;">
                                     2 years
@@ -408,48 +485,7 @@
                             </div>
 
                             <button class="project-btn">
-                                <a href="#">Explore More</a>
-                            </button>
-                        </div>
-
-                    </div>
-
-                    <div class="project-item item-02">
-
-                        <div class="project-item-content">
-                            <h4 style="color: #fff;font-size: 1.6rem;"><i class="fa-regular fa-house"> </i>LA SPACE</h4>
-                            <p class="project-text" style="color: #fff; font-size: 1.2rem;"><i
-                                    class="fa-solid fa-location-dot"></i> Luxury resident complex in
-                                Boshundhara R/A
-                            </p>
-
-                            <div class="title-description" style="display: flex;">
-                                <p class="title" style="margin-right: 10px; color: #a5a2a2;">
-                                    Client:
-                                </p>
-                                <p class="description" style="color: #fff; font-weight: 600;">
-                                    LASACO
-                                </p>
-                            </div>
-                            <div class="title-description" style="display: flex;">
-                                <p class="title" style="margin-right: 10px; color: #a5a2a2;">
-                                    Duration
-                                </p>
-                                <p class="description" style="color: #fff; font-weight: 600;">
-                                    2 years
-                                </p>
-                            </div>
-                            <div class="title-description" style="display: flex;">
-                                <p class="title" style="margin-right: 10px; color: #a5a2a2;">
-                                    Status:
-                                </p>
-                                <p class="description" style="color: #fff; font-weight: 600;">
-                                    Completed
-                                </p>
-                            </div>
-
-                            <button class="btn project-btn">
-                                <a href="#">Explore More</a>
+                                Explore More
                             </button>
                         </div>
 
@@ -468,15 +504,16 @@
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
                                     Client:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     LASACO
                                 </p>
+
                             </div>
                             <div class="title-description" style="display: flex;">
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
-                                    Duration
+                                    Duration:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     2 years
                                 </p>
                             </div>
@@ -484,13 +521,13 @@
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
                                     Status:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     Completed
                                 </p>
                             </div>
 
-                            <button class="btn project-btn">
-                                <a href="#">Explore More</a>
+                            <button class="project-btn">
+                                Explore More
                             </button>
                         </div>
 
@@ -500,24 +537,25 @@
 
                         <div class="project-item-content">
                             <h4 style="color: #fff;font-size: 1.6rem;"><i class="fa-regular fa-house"> </i>LA SPACE</h4>
-                            <p class="project-text" style="color: #fff; font-size: 1.2rem;"><i
-                                    class="fa-solid fa-location-dot"></i> Luxury resident complex in
-                                Boshundhara R/A
+                            <p class="project-text" style="color: #fff; font-size: 1.2rem;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Luxury resident complex in Boshundhara R/A
                             </p>
 
                             <div class="title-description" style="display: flex;">
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
                                     Client:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     LASACO
                                 </p>
+
                             </div>
                             <div class="title-description" style="display: flex;">
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
-                                    Duration
+                                    Duration:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     2 years
                                 </p>
                             </div>
@@ -525,13 +563,13 @@
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
                                     Status:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     Completed
                                 </p>
                             </div>
 
-                            <button class="btn project-btn">
-                                <a href="#">Explore More</a>
+                            <button class="project-btn">
+                                Explore More
                             </button>
                         </div>
 
@@ -541,24 +579,25 @@
 
                         <div class="project-item-content">
                             <h4 style="color: #fff;font-size: 1.6rem;"><i class="fa-regular fa-house"> </i>LA SPACE</h4>
-                            <p class="project-text" style="color: #fff; font-size: 1.2rem;"><i
-                                    class="fa-solid fa-location-dot"></i> Luxury resident complex in
-                                Boshundhara R/A
+                            <p class="project-text" style="color: #fff; font-size: 1.2rem;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Luxury resident complex in Boshundhara R/A
                             </p>
 
                             <div class="title-description" style="display: flex;">
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
                                     Client:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     LASACO
                                 </p>
+
                             </div>
                             <div class="title-description" style="display: flex;">
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
-                                    Duration
+                                    Duration:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     2 years
                                 </p>
                             </div>
@@ -566,13 +605,13 @@
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
                                     Status:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     Completed
                                 </p>
                             </div>
 
-                            <button class="btn project-btn">
-                                <a href="#">Explore More</a>
+                            <button class="project-btn">
+                                Explore More
                             </button>
                         </div>
 
@@ -582,24 +621,25 @@
 
                         <div class="project-item-content">
                             <h4 style="color: #fff;font-size: 1.6rem;"><i class="fa-regular fa-house"> </i>LA SPACE</h4>
-                            <p class="project-text" style="color: #fff; font-size: 1.2rem;"><i
-                                    class="fa-solid fa-location-dot"></i> Luxury resident complex in
-                                Boshundhara R/A
+                            <p class="project-text" style="color: #fff; font-size: 1.2rem;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Luxury resident complex in Boshundhara R/A
                             </p>
 
                             <div class="title-description" style="display: flex;">
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
                                     Client:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     LASACO
                                 </p>
+
                             </div>
                             <div class="title-description" style="display: flex;">
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
-                                    Duration
+                                    Duration:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     2 years
                                 </p>
                             </div>
@@ -607,21 +647,21 @@
                                 <p class="title" style="margin-right: 10px; color: #a5a2a2;">
                                     Status:
                                 </p>
-                                <p class="description" style="color: #fff;">
+                                <p class="description" style="color: #fff; font-weight: 600;">
                                     Completed
                                 </p>
                             </div>
 
-                            <button class="btn project-btn">
-                                <a href="#">Explore More</a>
+                            <button class="project-btn">
+                                Explore More
                             </button>
                         </div>
 
                     </div>
 
-
                 </div>
 
+            </div>
         </section>
 
         <section class="middle-section">
@@ -703,45 +743,43 @@
         </section>
 
         <section id="contact">
+            <div class="container">
 
+                <div class="company-box">
+                    <div class="company">
+                        <div class="company-img">
+                            <img width="100%" src="./Assets/Images/SSDC.png" alt="">
+                        </div>
+
+                        <div class="company-content">
+                            <h4>Connect With Us</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/SSDCBD">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsletter">
+                        <p>Subscribe to our Newsletter</p>
+
+                        <form action="">
+                            <input type="email" name="" id="" placeholder="Your Email Address">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-item">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <h4>Connect With Us</h4>
-                    <div class="footer-social">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <p>© 2025 All rights reserved by <a href="#">SSDC</a></p>
+        <p> <small>© 2025 All rights reserved by <a href="#" style="color: aqua;">SSDC</a></small></p>
     </footer>
 
 

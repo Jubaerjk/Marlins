@@ -1,7 +1,7 @@
-echo "# SSDC" 
+echo "# Marlins-Co" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Jubaerjk/SSDC.git
+git remote add origin https://github.com/Jubaerjk/Marlins-Co.git
 git push -u origin main

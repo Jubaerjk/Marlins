@@ -1,154 +1,194 @@
 /* ===================================================================== */
+/* Devices */
+/* ===================================================================== */
+
+/* Mobile Devices (0px to 479px) */
+@media (max-width: 480px) {}
+
+/* Tablet Devices (480px - 767px) */
+@media (max-width: 768px) {}
+
+/* Laptop Devices (768px - 1023px) */
+@media (max-width: 1024px) {}
+
+/* Large Desktop Devices (1200px+)*/
+@media (max-width: 1200px) {}
+
+
+
+/* ===================================================================== */
 /* Header Notice bar & Navbar Media */
 /* ===================================================================== */
-@media (max-width: 76.8rem) {
-    .notice-bar {
-        font-size: 1.4rem;
-    }
+@media (max-width: 992px) {
+  .navmenu {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    /* dark background for mobile */
+    position: absolute;
+    top: 6rem;
+    /* below navbar */
+    right: 0;
+    width: 20rem;
+    padding: 1rem;
+    z-index: 12;
+  }
 
-    .notice-bar .container {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
+  .navmenu.active {
+    display: flex;
+  }
 
-    .hamburger {
-        display: flex;
-    }
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+  }
 
-    .navmenu {
-        position: fixed;
-        top: 140px;
-        /* Notice bar + navbar height */
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 140px);
-        background: white;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 2rem;
-        transition: left 0.3s ease;
-        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .navmenu.active {
-        left: 0;
-    }
-
-    .navmenu ul {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
-
-    .navbar-btn {
-        height: 4rem;
-    }
+  .hamburger span {
+    width: 2rem;
+    height: 0.3rem;
+    background: #fff;
+  }
 }
 
-@media (max-width: 48rem) {
-    .notice-bar .container {
-        font-size: 1.2rem;
-    }
+@media (max-width: 600px) {
+  .navmenu {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    /* dark background for mobile */
+    position: absolute;
+    top: 6rem;
+    /* below navbar */
+    right: 0;
+    width: 20rem;
+    padding: 1rem;
+  }
 
-    .navbar {
-        height: 7.5rem;
-    }
+  .navmenu.active {
+    display: flex;
+  }
 
-    .logo img {
-        height: 40px;
-    }
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+  }
+
+  .hamburger span {
+    width: 2rem;
+    height: 0.3rem;
+    background: #fff;
+  }
 }
 
-/* ===================================================================== */
-/* Hero Section Media */
-/* ===================================================================== */
-@media (max-width: 76.8rem) {
-    #hero-section {
-        height: 80vh;
-    }
-
-    #hero-section .hero-section-heading h1 {
-        font-size: 3.2rem;
-    }
-
-    #hero-section .slider-btn-prev,
-    #hero-section .slider-btn-next {
-        width: 3rem;
-        height: 3rem;
-
-    }
-
-}
-
-@media (max-width: 48rem) {
-    #hero-section {
-        height: 65vh;
-    }
-}
 
 /* ===================================================================== */
 /* About Section Media */
 /* ===================================================================== */
 @media (max-width: 76.8rem) {
-    #about .container {
-        padding-top: 6.4rem;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
+  #about .container {
+    padding-top: 6.4rem;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 
-    #about .section-img {
-        width: 100%;
-        margin: 0 4rem;
-    }
+  #about .section-img {
+    width: 100%;
+    margin: 0 4rem;
+  }
 
-    #about .section-heading {
-        width: 100%;
-    }
+  #about .section-heading {
+    width: 100%;
+  }
 
-    #about .section-heading .section-title,
-    #about .section-heading .floating-title {
-        text-align: center;
-    }
+  #about .section-heading .section-title,
+  #about .section-heading .floating-title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 48rem) {
-    #about .container {
-        flex-direction: column-reverse;
-        gap: 1.6rem;
-    }
+  #about .container {
+    flex-direction: column-reverse;
+    gap: 1.6rem;
+  }
 
-    #about .section-img {
-        width: 100%;
-        margin: 0 4rem;
-    }
+  #about .section-img {
+    width: 100%;
+    margin: 0 4rem;
+  }
 
-    #about .container .section-heading {
-        max-width: 100%;
-    }
+  #about .container .section-heading {
+    max-width: 100%;
+  }
 
-    #about .section-heading .section-title {
-        font-size: 2.4rem;
-    }
+  #about .section-heading .section-title {
+    font-size: 2.4rem;
+  }
 
-    #about .section-heading .floating-title {
-        font-size: 1.2rem;
-    }
+  #about .section-heading .floating-title {
+    font-size: 1.2rem;
+  }
 }
 
-
-
+/* ===================================================================== */
+/* Project Section Media */
+/* ===================================================================== */
 @media (max-width: 76.8rem) {
-    #projects .container .projects-content {
-        max-width: 100%;
-        gap: 1.6rem;
-    }
+  #projects .container .projects-content {
+    max-width: 100%;
+    gap: 1.6rem;
+  }
 
-    #projects .container .projects-content .project-item {
-        justify-content: center;
-        width: 100%;
-    }
+  #projects .container .projects-content .project-item {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
-@media (max-width: 48rem) {}
+/* ===================================================================== */
+/* Team Section Media */
+/* ===================================================================== */
+
+@media (max-width: 48rem) {
+  #team .container .team-content {
+    flex-direction: column;
+  }
+
+  #team .container .team-item {
+    width: 100%;
+    gap: 1.6rem;
+  }
+
+  #projects .container .projects-content .project-item {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* ===================================================================== */
+/* Contact Section Media */
+/* ===================================================================== */
+
+@media (max-width: 48rem) {
+  #contact {
+    padding: 0 1rem;
+  }
+}
+
+/* ===================================================================== */
+/* Middle Section Media */
+/* ===================================================================== */
+
+@media (max-width: 48rem) {
+  .middle-section h4 {
+    font-size: 3.2rem;
+  }
+}
