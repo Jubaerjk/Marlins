@@ -24,15 +24,58 @@ Large Desktop Devices (1200px+)
 /* ===================================================================== */
 
 @media (max-width: 992px) {
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
   .navmenu {
-    /* display: none; */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+  }
+
+  .navmenu-list {
+    flex-direction: column;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .nav-open .navmenu {
+    right: 0;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .cta {
+    display: none;
+  }
+}
+
+
+/* @media (max-width: 992px) {
+  .navmenu {
+   
     font-size: 1.8rem;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.8);
-    /* dark background for mobile */
+   
     position: absolute;
     top: 0;
-    /* below navbar */
+  
     right: 0;
     width: 80%;
     height: 80vh;
@@ -85,112 +128,111 @@ Large Desktop Devices (1200px+)
     height: 0.3rem;
     background: #fff;
   }
+} */
+
+
+
+
+/* ===================================================================== */
+/* About Section Media */
+/* ===================================================================== */
+@media (max-width: 76.8rem) {
+  #about .container {
+    padding-top: 6.4rem;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #about .section-img {
+    width: 100%;
+    margin: 0 4rem;
+  }
+
+  #about .section-heading {
+    width: 100%;
+  }
+
+  #about .section-heading .section-title,
+  #about .section-heading .floating-title {
+    text-align: center;
+  }
 }
 
-@media (max-width: 600px) {
-
-
-
-  /* ===================================================================== */
-  /* About Section Media */
-  /* ===================================================================== */
-  @media (max-width: 76.8rem) {
-    #about .container {
-      padding-top: 6.4rem;
-      flex-direction: column-reverse;
-      text-align: center;
-    }
-
-    #about .section-img {
-      width: 100%;
-      margin: 0 4rem;
-    }
-
-    #about .section-heading {
-      width: 100%;
-    }
-
-    #about .section-heading .section-title,
-    #about .section-heading .floating-title {
-      text-align: center;
-    }
+@media (max-width: 48rem) {
+  #about .container {
+    flex-direction: column-reverse;
+    gap: 1.6rem;
   }
 
-  @media (max-width: 48rem) {
-    #about .container {
-      flex-direction: column-reverse;
-      gap: 1.6rem;
-    }
-
-    #about .section-img {
-      width: 100%;
-      margin: 0 4rem;
-    }
-
-    #about .container .section-heading {
-      max-width: 100%;
-    }
-
-    #about .section-heading .section-title {
-      font-size: 2.4rem;
-    }
-
-    #about .section-heading .floating-title {
-      font-size: 1.2rem;
-    }
+  #about .section-img {
+    width: 100%;
+    margin: 0 4rem;
   }
 
-  /* ===================================================================== */
-  /* Project Section Media */
-  /* ===================================================================== */
-  @media (max-width: 76.8rem) {
-    #projects .container .projects-content {
-      max-width: 100%;
-      gap: 1.6rem;
-    }
-
-    #projects .container .projects-content .project-item {
-      justify-content: center;
-      width: 100%;
-    }
+  #about .container .section-heading {
+    max-width: 100%;
   }
 
-  /* ===================================================================== */
-  /* Team Section Media */
-  /* ===================================================================== */
-
-  @media (max-width: 48rem) {
-    #team .container .team-content {
-      flex-direction: column;
-    }
-
-    #team .container .team-item {
-      width: 100%;
-      gap: 1.6rem;
-    }
-
-    #projects .container .projects-content .project-item {
-      justify-content: center;
-      width: 100%;
-    }
+  #about .section-heading .section-title {
+    font-size: 2.4rem;
   }
 
-  /* ===================================================================== */
-  /* Contact Section Media */
-  /* ===================================================================== */
+  #about .section-heading .floating-title {
+    font-size: 1.2rem;
+  }
+}
 
-  @media (max-width: 48rem) {
-    #contact {
-      padding: 0 1rem;
-    }
+/* ===================================================================== */
+/* Project Section Media */
+/* ===================================================================== */
+@media (max-width: 76.8rem) {
+  #projects .container .projects-content {
+    max-width: 100%;
+    gap: 1.6rem;
   }
 
-  /* ===================================================================== */
-  /* Middle Section Media */
-  /* ===================================================================== */
-
-  @media (max-width: 48rem) {
-    .middle-section h4 {
-      font-size: 3.2rem;
-    }
+  #projects .container .projects-content .project-item {
+    justify-content: center;
+    width: 100%;
   }
+}
+
+/* ===================================================================== */
+/* Team Section Media */
+/* ===================================================================== */
+
+@media (max-width: 48rem) {
+  #team .container .team-content {
+    flex-direction: column;
+  }
+
+  #team .container .team-item {
+    width: 100%;
+    gap: 1.6rem;
+  }
+
+  #projects .container .projects-content .project-item {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* ===================================================================== */
+/* Contact Section Media */
+/* ===================================================================== */
+
+@media (max-width: 48rem) {
+  #contact {
+    padding: 0 1rem;
+  }
+}
+
+/* ===================================================================== */
+/* Middle Section Media */
+/* ===================================================================== */
+
+@media (max-width: 48rem) {
+  .middle-section h4 {
+    font-size: 3.2rem;
+  }
+}
