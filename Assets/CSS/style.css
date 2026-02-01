@@ -13,7 +13,8 @@
 }
 
 /* ==========================================================
-   Universal RESET (Margin,Padding, Box-Model)
+   Universal RESET (Margin,Padding, Box-Model)  
+   !fixed
 ========================================================== */
 
 * {
@@ -24,6 +25,7 @@
 
 /* ==========================================================
    BASE STYLES (default font-size, font-color)
+   !fixed (mostly)
 ========================================================== */
 html {
     font-size: 62.5%;
@@ -62,6 +64,7 @@ a {
 .section-title {
     /* font */
     font-size: clamp(2.4rem, 1.4rem + 2vw, 4rem);
+    font-weight: 600;
     letter-spacing: 0.1rem;
 
     /* box-model */
@@ -150,7 +153,7 @@ a {
    NAVBAR
 ================================ */
 .navbar {
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 1rem + 0.5vw, 1.6rem);
 
     /* box-model */
     width: 100%;
@@ -172,10 +175,10 @@ a {
     justify-content: space-between;
 }
 
-.navbar-main {
+.navmenu {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2.4rem;
 }
 
 .logo img {
@@ -215,8 +218,8 @@ a {
 /* CTA */
 .navbar-btn {
     /* box-model */
-    padding: 1.2rem 2.8rem;
-    border: 2px solid aqua;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid rgba(0, 255, 255, 0.7);
     border-radius: 4rem;
     transition: 0.3s;
 
