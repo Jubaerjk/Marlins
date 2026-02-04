@@ -40,7 +40,7 @@
     <header>
 
         <!-- Hero Section with Navbar Start-->
-        <section id="hero-section">
+        <section id="hero-section" style="display: none;">
 
             <video class="hero-video" autoplay loop muted playsinline>
                 <source src="./Assets/Videos/hero.mp4" type="video/mp4">
@@ -55,7 +55,7 @@
 
                         <!-- Logo -->
                         <a href="index.html" class="logo">
-                            <img src="./Assets/Images/Asset 1.svg" alt="Marlings & Co Logo">
+                            <img src="./Assets/Images/Marlins & Co.svg" alt="Marlings & Co Logo">
                         </a>
 
                         <div class="navmenu">
@@ -113,7 +113,7 @@
 
     <main>
 
-        <section id="articles">
+        <section id="articles" style="display: none;">
             <div class="container">
 
                 <article class="article-box box-1">
@@ -182,7 +182,7 @@
                 </div>
 
                 <div class="section-heading">
-                    <p class="floating-title">~ About Us ~</p>
+                    <p class="floating-title">~ We Build What Works. ~</p>
                     <h2 class="section-title">Marlings & Co</h2>
                     <p class="section-para para-1">
                         We are a multidisciplinary design and engineering firm offering architectural design, structural
@@ -222,151 +222,454 @@
         </section>
 
         <!-- Services Section Start-->
-        <section id="services" style="display: none;">
+        <section id="services" class="services">
             <div class="container">
-                <div class="services-heading section-heading">
+
+                <!-- Section Header -->
+                <header class="section-heading services-header">
                     <p class="floating-title">~ What we offer! ~</p>
                     <h2 class="section-title">Explore Our Services</h2>
-                </div>
+                </header>
 
-                <div class="services-content service-box" style="background-color: aqua;">
+                <!-- Services List -->
+                <ul class="services-list">
 
-                    <div class="slider-controls">
+                    <!-- Service Item-01 -->
+                    <li class="service service-01">
+                        <article class="service-card">
 
-                        <button class="slider-btn-prev" aria-label="Previous slide">
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </button>
-
-                        <button class="slider-btn-next" aria-label="Next slide">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
-
-                    </div>
-
-                    <div class="service-carousal-box">
-                        <div class="service-carousal-viewport">
-
-                            <div class="service-item item-01">
-                                <div class="service-item-header">
-                                    <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="service-icon">
-                                    </div>
-                                    <h3 class="service-item-heading">2D & 3D Design</h3>
-                                </div>
-                                <div class="service-item-content">
-                                    <h4>Architectural Design</h4>
-                                    <p class="service-text">creating innovative and functional architectural designs
-                                        that blend
-                                        aesthetics with practicality
+                            <header class="service-card-header">
+                                <figure class="service-icon">
+                                    <img src="./Assets/Images/property.png" alt="Architectural Design Icon">
+                                </figure>
+                                <div class="service-header-text">
+                                    <h3 class="service-header-title">
+                                        Architectural Design
+                                    </h3>
+                                    <p class="service-header-subtitle">
+                                        Concepts to construction-ready design
                                     </p>
-                                    <button class="">
-                                        <a href="#">Explore More</a>
-                                    </button>
                                 </div>
+                            </header>
+
+                            <div class="service-content">
+                                <h4 class="service-content-title">Content Provided</h4>
+                                <ul class="service-description-list">
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Concept & Feasibility Studies
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Master Planning & Urban Design
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Residential Architecture
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Commercial & Mixed-Use Design
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Institutional & Industrial Buildings
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Interior Architecture & Space Planning
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        3D Visualization & Rendering
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Sustainable / Green Building Design
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Design Development & Construction
+                                        Drawings
+                                    </li>
+                                </ul>
+                                <a href="#" class="service-link">Discuss More</a>
                             </div>
 
-                            <div class="service-item item-02">
-                                <div class="service-item-header">
-                                    <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="service-icon">
-                                    </div>
-                                    <h3 class="service-item-heading">2D & 3D Design</h3>
-                                </div>
-                                <div class="service-item-content">
-                                    <h4>Architectural Design</h4>
-                                    <p class="service-text">creating innovative and functional architectural designs
-                                        that blend
-                                        aesthetics with practicality
+                        </article>
+                    </li>
+
+                    <!-- Service Item-02 -->
+                    <li class="service service-02">
+                        <article class="service-card">
+
+                            <header class="service-card-header">
+                                <figure class="service-icon">
+                                    <img src="./Assets/Images/property.png" alt="Architectural Design Icon">
+                                </figure>
+                                <div class="service-header-text">
+                                    <h3 class="service-header-title">
+                                        Civil & Structural Engineering
+                                    </h3>
+                                    <p class="service-header-subtitle">
+                                        Safe, efficient, and compliant infrastructure
                                     </p>
-                                    <button class="">
-                                        <a href="#">Explore More</a>
-                                    </button>
                                 </div>
+                            </header>
+
+                            <div class="service-content">
+                                <h4 class="service-content-title">Content Provided</h4>
+                                <ul class="service-description-list">
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Structural Design & Analysis
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Reinforced Concrete & Steel Structures
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Foundation & Substructure Design
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Seismic & Wind Load Analysis
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Retrofitting & Structural Rehabilitation
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Infrastructure Design (Roads, Bridges, Utilities)
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Drainage & Stormwater Management
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Value Engineering
+                                    </li>
+                                </ul>
+                                <a href="#" class="service-link">Explore More</a>
                             </div>
 
-                            <div class="service-item item-03">
-                                <div class="service-item-header">
-                                    <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="service-icon">
-                                    </div>
-                                    <h3 class="service-item-heading">2D & 3D Design</h3>
-                                </div>
-                                <div class="service-item-content">
-                                    <h4>Architectural Design</h4>
-                                    <p class="service-text">creating innovative and functional architectural designs
-                                        that blend
-                                        aesthetics with practicality
+                        </article>
+                    </li>
+
+                    <!-- Service Item-03 -->
+                    <li class="service service-03">
+                        <article class="service-card">
+
+                            <header class="service-card-header">
+                                <figure class="service-icon">
+                                    <img src="./Assets/Images/property.png" alt="Architectural Design Icon">
+                                </figure>
+                                <div class="service-header-text">
+                                    <h3 class="service-header-title">
+                                        Construction Management & Supervision
+                                    </h3>
+                                    <p class="service-header-subtitle">
+                                        From planning to project delivery
                                     </p>
-                                    <button class="">
-                                        <a href="#">Explore More</a>
-                                    </button>
                                 </div>
+                            </header>
+
+                            <div class="service-content">
+                                <h4 class="service-content-title">Content Provided</h4>
+                                <ul class="service-description-list">
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Project Planning & Scheduling
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Site Supervision & Inspection
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Quality Control & Assurance
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Contractor Coordination
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Progress Monitoring & Reporting
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Health, Safety & Environmental (HSE) Management
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Cost Control & Risk Management
+                                    </li>
+                                </ul>
+                                <a href="#" class="service-link">Explore More</a>
                             </div>
 
-                            <div class="service-item item-04">
-                                <div class="service-item-header">
-                                    <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="service-icon">
-                                    </div>
-                                    <h3 class="service-item-heading">2D & 3D Design</h3>
-                                </div>
-                                <div class="service-item-content">
-                                    <h4>Architectural Design</h4>
-                                    <p class="service-text">creating innovative and functional architectural designs
-                                        that blend
-                                        aesthetics with practicality
+                        </article>
+                    </li>
+
+                    <!-- Service Item-04 -->
+                    <li class="service service-04">
+                        <article class="service-card">
+
+                            <header class="service-card-header">
+                                <figure class="service-icon">
+                                    <img src="./Assets/Images/property.png" alt="Architectural Design Icon">
+                                </figure>
+                                <div class="service-header-text">
+                                    <h3 class="service-header-title">
+                                        Engineering Consultancy & Advisory
+                                    </h3>
+                                    <p class="service-header-subtitle">
+                                        Expert guidance for smart decisions
                                     </p>
-                                    <button class="">
-                                        <a href="#">Explore More</a>
-                                    </button>
                                 </div>
+                            </header>
+
+                            <div class="service-content">
+                                <h4 class="service-content-title">Content Provided</h4>
+                                <ul class="service-description-list">
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Technical Due Diligence
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Feasibility & Viability Studies
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Engineering Audits
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Peer Review of Designs
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Regulatory & Code Compliance Consulting
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Value Engineering & Optimization
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Expert Opinions & Reports
+                                    </li>
+                                </ul>
+                                <a href="#" class="service-link">Explore More</a>
                             </div>
 
-                            <div class="service-item item-05">
-                                <div class="service-item-header">
-                                    <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="service-icon">
-                                    </div>
-                                    <h3 class="service-item-heading">2D & 3D Design</h3>
-                                </div>
-                                <div class="service-item-content">
-                                    <h4>Architectural Design</h4>
-                                    <p class="service-text">creating innovative and functional architectural designs
-                                        that blend
-                                        aesthetics with practicality
+                        </article>
+                    </li>
+
+                    <!-- Service Item-05 -->
+                    <li class="service service-05">
+                        <article class="service-card">
+
+                            <header class="service-card-header">
+                                <figure class="service-icon">
+                                    <img src="./Assets/Images/property.png" alt="Architectural Design Icon">
+                                </figure>
+                                <div class="service-header-text">
+                                    <h3 class="service-header-title">
+                                        BIM & Digital Engineering Services
+                                    </h3>
+                                    <p class="service-header-subtitle">
+                                        Modern, data-driven project delivery
                                     </p>
-                                    <button class="">
-                                        <a href="#">Explore More</a>
-                                    </button>
                                 </div>
+                            </header>
+
+
+                            <div class="service-content">
+                                <h4 class="service-content-title">Content Provided</h4>
+                                <ul class="service-description-list">
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Building Information Modeling (BIM)
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        3D / 4D / 5D BIM Services
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Clash Detection & Coordination
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Shop Drawings & As-Built Models
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Digital Twin Development
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        CAD Drafting & Detailing
+                                    </li>
+                                </ul>
+                                <a href="#" class="service-link">Explore More</a>
                             </div>
 
-                            <div class="service-item item-06">
-                                <div class="service-item-header">
-                                    <div class="service-icon">
-                                        <img src="./Assets/Images/property.png" alt="service-icon">
-                                    </div>
-                                    <h3 class="service-item-heading">2D & 3D Design</h3>
-                                </div>
-                                <div class="service-item-content">
-                                    <h4>Architectural Design</h4>
-                                    <p class="service-text">creating innovative and functional architectural designs
-                                        that blend
-                                        aesthetics with practicality
+                        </article>
+                    </li>
+
+                    <!-- Service Item-06 -->
+                    <li class="service service-06">
+                        <article class="service-card">
+
+                            <header class="service-card-header">
+                                <figure class="service-icon">
+                                    <img src="./Assets/Images/property.png" alt="Architectural Design Icon">
+                                </figure>
+                                <div class="service-header-text">
+                                    <h3 class="service-header-title">
+                                        Infrastructure & Urban Development
+                                    </h3>
+                                    <p class="service-header-subtitle">
+                                        Large-scale and public projects
                                     </p>
-                                    <button class="">
-                                        <a href="#">Explore More</a>
-                                    </button>
                                 </div>
+                            </header>
+
+                            <div class="service-content">
+                                <h4 class="service-content-title">Content Provided</h4>
+                                <ul class="service-description-list">
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Roads & Highways Design
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Water Supply & Sewerage Systems
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Stormwater & Flood Control
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Urban Infrastructure Planning
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Site Development & Grading
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Utility Layout & Coordination
+                                    </li>
+                                </ul>
+                                <a href="#" class="service-link">Explore More</a>
                             </div>
 
-                        </div>
-                    </div>
+                        </article>
+                    </li>
 
+                    <!-- Service Item-07 -->
+                    <li class="service service-07">
+                        <article class="service-card">
 
-                </div>
+                            <header class="service-card-header">
+                                <figure class="service-icon">
+                                    <img src="./Assets/Images/property.png" alt="Architectural Design Icon">
+                                </figure>
+                                <div class="service-header-text">
+                                    <h3 class="service-header-title">
+                                        Sustainable & Environmental Engineering
+                                    </h3>
+                                    <p class="service-header-subtitle">
+                                        Responsible and future-ready design
+                                    </p>
+                                </div>
+                            </header>
+
+                            <div class="service-content">
+                                <h4 class="service-content-title">Content Provided</h4>
+                                <ul class="service-description-list">
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Green Building Consultancy (LEED / BREEAM)
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Energy-Efficient Design Solutions
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Environmental Impact Assessment (EIA)
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Climate-Resilient Infrastructure Design
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Water & Waste Management Solutions
+                                    </li>
+                                </ul>
+                                <a href="#" class="service-link">Discuss More</a>
+                            </div>
+
+                        </article>
+                    </li>
+                    <!-- Service Item-08 -->
+                    <li class="service service-08">
+                        <article class="service-card">
+
+                            <header class="service-card-header">
+                                <figure class="service-icon">
+                                    <img src="./Assets/Images/property.png" alt="Architectural Design Icon">
+                                </figure>
+                                <div class="service-header-text">
+                                    <h3 class="service-header-title">
+                                        Renovation, Retrofitting & Assessment
+                                    </h3>
+                                    <p class="service-header-subtitle">
+                                        Upgrading existing assets
+                                    </p>
+                                </div>
+                            </header>
+
+                            <div class="service-content">
+                                <h4 class="service-content-title">Content Provided</h4>
+                                <ul class="service-description-list">
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Building Condition Assessment
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Structural Safety Audits
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Renovation & Remodeling Design
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Seismic Retrofitting
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Adaptive Reuse of Buildings
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Life-Cycle Cost Analysis
+                                    </li>
+                                </ul>
+                                <a href="#" class="service-link">Explore More</a>
+                            </div>
+
+                        </article>
+                    </li>
+                    <!-- Service Item-09 -->
+                    <li class="service service-09">
+                        <article class="service-card">
+
+                            <header class="service-card-header">
+                                <figure class="service-icon">
+                                    <img src="./Assets/Images/property.png" alt="Architectural Design Icon">
+                                </figure>
+                                <div class="service-header-text">
+                                    <h3 class="service-header-title">
+                                        Surveying & Geotechnical Services
+                                    </h3>
+                                    <p class="service-header-subtitle">
+                                        Grounded in accuracy
+                                    </p>
+                                </div>
+                            </header>
+
+                            <div class="service-content">
+                                <h4 class="service-content-title">Content Provided</h4>
+                                <ul class="service-description-list">
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Topographic & Land Surveys
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Geotechnical Investigation
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Soil Testing & Analysis
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Foundation Recommendations
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i>
+                                        Earthworks & Site Evaluation
+                                    </li>
+                                </ul>
+                                <a href="#" class="service-link">Explore More</a>
+                            </div>
+
+                        </article>
+                    </li>
+
+                    <!-- Repeat for other services -->
+
+                </ul>
+
             </div>
         </section>
+
         <!-- Services Section End-->
 
         <section class="middle-section">
