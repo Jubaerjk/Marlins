@@ -321,7 +321,7 @@ ul li {
     display: flex;
     justify-content: center;
     /* flex-wrap: wrap; */
-    gap: 1.2rem;
+    gap: 2rem;
 }
 
 .article-box {
@@ -329,57 +329,16 @@ ul li {
     background-color: rgb(27, 27, 27);
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    justify-content: center;
-    align-items: center;
+    gap: 2.4rem;
+    padding: 1.2rem;
     border-radius: 1.6rem;
-
-    position: relative;
-    overflow: hidden;
+    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.1);
 }
 
-.article-box::before {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 150%;
-    background: linear-gradient(180deg, #00b7ff, #ff30ff);
-    animation: rotate 6s linear infinite;
-}
-
-.article-box::after {
-    content: "";
-    position: absolute;
-    inset: 3px;
-    background: rgb(27, 27, 27);
-    border-radius: 1.2rem;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.article-image {
-    padding: 0.4rem;
-    z-index: 10;
-}
 
 #articles .container .article-box img {
-    border-top-left-radius: 1.2rem;
-    border-top-right-radius: 1.2rem;
+    border-radius: 1.2rem;
     width: 100%;
-}
-
-.article-text {
-    padding: 0.8rem;
-    flex: 1;
-    z-index: 2;
 }
 
 .article-divider {
@@ -414,9 +373,7 @@ ul li {
     font-weight: 600;
     padding: 0.8rem 3.6rem;
     border-radius: 0.6rem;
-
-    z-index: 10;
-    margin: 0.4rem;
+    text-align: center;
 }
 
 .article-read-more:hover {
@@ -545,10 +502,9 @@ ul li {
 ================================ */
 .service-card-header {
     display: flex;
-    gap: 1.6rem;
+    gap: 8rem;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+    z-index: 10;
 }
 
 .service-icon {
@@ -573,6 +529,7 @@ ul li {
     font-weight: 800;
     letter-spacing: 0.2rem;
     color: #ffffff;
+    z-index: 10;
 }
 
 .service-header-title {
@@ -591,12 +548,14 @@ ul li {
 }
 
 .service-content {
+    width: 36rem;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
     background-color: #181818;
     padding: 2rem;
     border-radius: 0.8rem;
+    z-index: 10;
 }
 
 .service-content-title {
@@ -629,4 +588,60 @@ ul li {
 .service-link:hover {
     background-color: #0b5ed7;
     color: #fff;
+}
+
+
+
+
+
+
+.service-card {
+    /* color */
+    background-color: #222831;
+
+    /* box-model */
+    width: 40rem;
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+
+    /* CSS Layout */
+    display: flex;
+    gap: 2.4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* box-model */
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 150%;
+    background: linear-gradient(180deg, #00b7ff, #ff30ff);
+    animation: rotate 12s linear infinite;
+}
+
+.service-card::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #222831;
+    border-radius: 1rem;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
