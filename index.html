@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marlings & Co</title>
 
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="./Assets/Images/Marlins&Co.svg" type="image/x-icon">
 
-    <link rel="shortcut icon" href="./Assets/Images/Marlins & Co.svg" type="image/x-icon">
-
-    <!-- Offline CSS  -->
-    <!-- <link rel="stylesheet" href="./Assets/CSS/style.css">
-    <link rel="stylesheet" href="./Assets/CSS/media.css"> -->
-
+    <!-- CSS  -->
     <link rel="stylesheet" href="./Assets/CSS/style.css">
-
     <link rel="stylesheet" href="./Assets/CSS/media.css">
-
-    <link rel="stylesheet" href="./Assets/Fonts/font.css">
 
     <!-- Font Awesome CDN  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -42,45 +36,44 @@
         <!-- Hero Section with Navbar Start-->
         <section id="hero-section">
 
-            <video class="hero-video" autoplay loop muted playsinline>
+            <video class="hero-video" autoplay loop muted playsinline poster="./Assets/Images/hero-poster.jpg">
                 <source src="./Assets/Videos/hero.mp4" type="video/mp4">
-                Your browser does not support the video tag.
             </video>
+
+
 
             <div class="container">
 
                 <!-- NAVBAR Start -->
                 <nav class="navbar" aria-label="Main Navigation">
-                    <div class="container">
 
-                        <!-- Logo -->
-                        <a href="index.html" class="logo">
-                            <img src="./Assets/Images/Marlins & Co.svg" alt="Marlings & Co Logo">
-                        </a>
+                    <!-- Logo -->
+                    <a href="index.html" class="logo">
+                        <img src="./Assets/Images/Marlins&Co.svg" alt="Marlings & Co Logo">
+                    </a>
 
-                        <div class="navmenu">
-                            <ul class="navmenu-list">
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#team">Team</a></li>
-                                <li><a href="#projects">Project</a></li>
-                                <li><a href="#blog">Blog</a></li>
-                            </ul>
+                    <div class="navmenu">
+                        <ul class="navmenu-list">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#projects">Project</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
 
-                            <!-- CTA  -->
-                            <div class="cta">
-                                <a href="#contact" class="navbar-btn">Contact Us</a>
-                            </div>
+                        <!-- CTA  -->
+                        <div class="cta">
+                            <a href="#contact" class="navbar-btn">Contact Us</a>
                         </div>
-
-                        <button class="btn-mobile-nav">
-
-                            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-                            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-
-                        </button>
-
                     </div>
+
+                    <button class="btn-mobile-nav">
+
+                        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+                    </button>
+
                 </nav>
                 <!-- NAVBAR End -->
 
@@ -116,10 +109,12 @@
         <section id="articles">
             <div class="container">
 
-                <div class="section-heading">
+                <!-- Article Header -->
+                <header class="section-heading">
                     <h2 class="article-title">Recent News</h2>
-                </div>
+                </header>
 
+                <!-- Article Content -->
                 <div class="article-content">
                     <article class="article-box box-1">
                         <figure class="article-image">
@@ -178,13 +173,14 @@
 
             </div>
         </section>
+        <!-- Article Section End-->
 
         <!-- About Section Start-->
         <section id="about">
             <div class="container">
 
                 <div class="section-img">
-                    <img src="./Assets/Images/Marlins & Co.svg" alt="">
+                    <img src="./Assets/Images/Marlins&Co.svg" alt="Marlins&Co_logo">
                 </div>
 
                 <div class="section-heading">
@@ -220,12 +216,10 @@
 
         <section class="middle-section">
             <div class="container">
-                <h4>
-                    Design with Integrity
-                </h4>
+                <h3>Design with Integrity</h3>
             </div>
-
         </section>
+
 
         <!-- Services Section Start-->
         <section id="services" class="services">
@@ -435,7 +429,7 @@
             </div>
         </section>
 
-        <section id="projects" style="display: none;">
+        <section id="projects" class="is-hidden">
             <div class="container">
 
                 <div class="projects-heading section-heading">
@@ -717,7 +711,7 @@
             </div>
         </section>
 
-        <section id="team" style="display: none;">
+        <section id="team" class="is-hidden">
             <div class="container">
 
                 <div class="team-heading section-heading">
@@ -728,7 +722,7 @@
                 <div class="team-content">
                     <div class="team-item">
                         <div class="team-item-img">
-                            <img width="100%" src="Assets/Images/Team/01.png" alt="">
+                            <img width="100%" src="Assets/Images/Team/01.png" alt="team member portrait">
                         </div>
                         <div class="team-item-text">
                             <h4 class="member-name">MD. Jubaer Khan</h4>
@@ -746,7 +740,7 @@
                     </div>
                     <div class="team-item">
                         <div class="team-item-img">
-                            <img width="100%" src="Assets/Images/Team/02.jpg" alt="">
+                            <img width="100%" src="Assets/Images/Team/02.jpg" alt="team member portrait">
                         </div>
                         <div class="team-item-text">
                             <h4 class="member-name">MD. Sabbir Hossain</h4>
@@ -763,7 +757,7 @@
                     </div>
                     <div class="team-item">
                         <div class="team-item-img">
-                            <img width="100%" src="Assets/Images/Team/03.png" alt="">
+                            <img width="100%" src="Assets/Images/Team/03.png" alt="team member portrait">
                         </div>
                         <div class="team-item-text">
                             <h4 class="member-name">Mike Johnson</h4>
@@ -783,13 +777,13 @@
 
         </section>
 
-        <section id="contact" style="display: none;">
+        <section id="contact" class="is-hidden">
             <div class="container">
 
                 <div class="company-box">
                     <div class="company">
                         <div class="company-img">
-                            <img width="100%" src="./Assets/Images/SSDC.png" alt="">
+                            <img width="100%" src="./Assets/Images/Marlins&Co.svg" alt="Marlins&Co_logo">
                         </div>
 
                         <div class="company-content">
@@ -808,9 +802,11 @@
                     <div class="newsletter">
                         <p>Subscribe to our Newsletter</p>
 
-                        <form action="">
-                            <input type="email" name="" id="" placeholder="Your Email Address">
+                        <form action="#" method="post">
+                            <input type="email" id="newsletter-email" name="email" placeholder="Your Email Address"
+                                required>
                         </form>
+
                     </div>
                 </div>
 
@@ -820,8 +816,13 @@
     </main>
 
     <footer>
-        <p> <small>© 2025 All rights reserved by <a href="#" style="color: aqua;">SSDC</a></small></p>
+        <p>
+            <small>© 2026 All rights reserved by
+                <a href="#" style="color: aqua;">Marlings & Co</a>
+            </small>
+        </p>
     </footer>
+
 
 
 
