@@ -18,8 +18,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Ionicons CSS CDN  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons-css@5.2.1/dist/icon.css">
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,155 +103,139 @@
 
     <main>
 
+        <!-- Article Section Start-->
         <section id="articles">
             <div class="container">
 
-                <!-- Article Header -->
+                <!-- Section Heading -->
                 <header class="section-heading">
                     <h2 class="article-title">Recent News</h2>
                 </header>
 
-                <!-- Article List -->
-                <div class="article-content">
+                <!-- Slider Controls -->
+                <div class="article-slider-controls">
+                    <button class="article-slider-btn-prev" aria-label="Previous article">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
 
-                    <div class="article-slider-controls">
-                        <button class="article-slider-btn-prev" aria-label="Previous slide">
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </button>
-
-                        <button class="article-slider-btn-next" aria-label="Next slide">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
-                    </div>
-
-                    <div class="article-track">
-
-
-                        <!-- Article Item -->
-                        <article class="article-box box-01">
-                            <figure class="article-image">
-                                <img src="./Assets/Images/Team/01.jpg" alt="Project update image">
-                            </figure>
-
-                            <div class="article-text">
-                                <h3 class="article-heading">Article Heading</h3>
-                                <p class="article-subheading">Article Subheading</p>
-                                <time class="article-date" datetime="2026-02-02">
-                                    02 Feb, 2026
-                                </time>
-                            </div>
-
-                            <a href="#" class="article-read-more">Read More</a>
-                        </article>
-
-                        <!-- Article Item -->
-                        <article class="article-box box-02">
-                            <figure class="article-image">
-                                <img src="./Assets/Images/Team/02.jpg" alt="Project update image">
-                            </figure>
-
-                            <div class="article-text">
-                                <h3 class="article-heading">Article Heading</h3>
-                                <p class="article-subheading">Article Subheading</p>
-                                <time class="article-date" datetime="2026-02-02">
-                                    02 Feb, 2026
-                                </time>
-                            </div>
-
-                            <a href="#" class="article-read-more">Read More</a>
-                        </article>
-
-                        <!-- Article Item -->
-                        <article class="article-box box-03">
-                            <figure class="article-image">
-                                <img src="./Assets/Images/Team/03.jpg" alt="Project update image">
-                            </figure>
-
-                            <div class="article-text">
-                                <h3 class="article-heading">Article Heading</h3>
-                                <p class="article-subheading">Article Subheading</p>
-                                <time class="article-date" datetime="2026-02-02">
-                                    02 Feb, 2026
-                                </time>
-                            </div>
-
-                            <a href="#" class="article-read-more">Read More</a>
-                        </article>
-
-                        <!-- Article Item -->
-                        <article class="article-box box-04">
-                            <figure class="article-image">
-                                <img src="./Assets/Images/Team/01.jpg" alt="Project update image">
-                            </figure>
-
-                            <div class="article-text">
-                                <h3 class="article-heading">Article Heading</h3>
-                                <p class="article-subheading">Article Subheading</p>
-                                <time class="article-date" datetime="2026-02-02">
-                                    02 Feb, 2026
-                                </time>
-                            </div>
-
-                            <a href="#" class="article-read-more">Read More</a>
-                        </article>
-
-                        <!-- Article Item -->
-                        <article class="article-box box-04">
-                            <figure class="article-image">
-                                <img src="./Assets/Images/Team/01.jpg" alt="Project update image">
-                            </figure>
-
-                            <div class="article-text">
-                                <h3 class="article-heading">Article Heading</h3>
-                                <p class="article-subheading">Article Subheading</p>
-                                <time class="article-date" datetime="2026-02-02">
-                                    02 Feb, 2026
-                                </time>
-                            </div>
-
-                            <a href="#" class="article-read-more">Read More</a>
-                        </article>
-
-                        <!-- Article Item -->
-                        <article class="article-box box-04">
-                            <figure class="article-image">
-                                <img src="./Assets/Images/Team/01.jpg" alt="Project update image">
-                            </figure>
-
-                            <div class="article-text">
-                                <h3 class="article-heading">Article Heading</h3>
-                                <p class="article-subheading">Article Subheading</p>
-                                <time class="article-date" datetime="2026-02-02">
-                                    02 Feb, 2026
-                                </time>
-                            </div>
-
-                            <a href="#" class="article-read-more">Read More</a>
-                        </article>
-
-                        <!-- Article Item -->
-                        <article class="article-box box-04">
-                            <figure class="article-image">
-                                <img src="./Assets/Images/Team/01.jpg" alt="Project update image">
-                            </figure>
-
-                            <div class="article-text">
-                                <h3 class="article-heading">Article Heading</h3>
-                                <p class="article-subheading">Article Subheading</p>
-                                <time class="article-date" datetime="2026-02-02">
-                                    02 Feb, 2026
-                                </time>
-                            </div>
-
-                            <a href="#" class="article-read-more">Read More</a>
-                        </article>
-
-                    </div>
-
+                    <button class="article-slider-btn-next" aria-label="Next article">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
 
+                <!-- Slider Viewport -->
+                <div class="article-content">
+
+
+
+                    <!-- Slider Track (GRID) -->
+                    <div class="article-track">
+
+                        <!-- Article 01 -->
+                        <article class="article-box">
+                            <figure class="article-image">
+                                <img src="./Assets/Images/Team/01.jpg" alt="Article image">
+                            </figure>
+
+                            <div class="article-text">
+                                <h3 class="article-heading">Engineering Breakthrough</h3>
+                                <p class="article-subheading">Smart Structural Design</p>
+                                <time class="article-date" datetime="2026-02-02">
+                                    02 Feb, 2026
+                                </time>
+                            </div>
+
+                            <a href="#" class="article-read-more">Read More</a>
+                        </article>
+
+                        <!-- Article 02 -->
+                        <article class="article-box">
+                            <figure class="article-image">
+                                <img src="./Assets/Images/Team/02.jpg" alt="Article image">
+                            </figure>
+
+                            <div class="article-text">
+                                <h3 class="article-heading">Urban Development</h3>
+                                <p class="article-subheading">Sustainable Cities</p>
+                                <time class="article-date" datetime="2026-02-05">
+                                    05 Feb, 2026
+                                </time>
+                            </div>
+
+                            <a href="#" class="article-read-more">Read More</a>
+                        </article>
+
+                        <!-- Article 03 -->
+                        <article class="article-box">
+                            <figure class="article-image">
+                                <img src="./Assets/Images/Team/03.jpg" alt="Article image">
+                            </figure>
+
+                            <div class="article-text">
+                                <h3 class="article-heading">Architecture Trends</h3>
+                                <p class="article-subheading">Modern Living Spaces</p>
+                                <time class="article-date" datetime="2026-02-08">
+                                    08 Feb, 2026
+                                </time>
+                            </div>
+
+                            <a href="#" class="article-read-more">Read More</a>
+                        </article>
+
+                        <!-- Article 04 -->
+                        <article class="article-box">
+                            <figure class="article-image">
+                                <img src="./Assets/Images/Team/01.jpg" alt="Article image">
+                            </figure>
+
+                            <div class="article-text">
+                                <h3 class="article-heading">Project Milestone</h3>
+                                <p class="article-subheading">Construction Progress</p>
+                                <time class="article-date" datetime="2026-02-12">
+                                    12 Feb, 2026
+                                </time>
+                            </div>
+
+                            <a href="#" class="article-read-more">Read More</a>
+                        </article>
+                        <!-- Article 05 -->
+                        <article class="article-box">
+                            <figure class="article-image">
+                                <img src="./Assets/Images/Team/01.jpg" alt="Article image">
+                            </figure>
+
+                            <div class="article-text">
+                                <h3 class="article-heading">Project Milestone</h3>
+                                <p class="article-subheading">Construction Progress</p>
+                                <time class="article-date" datetime="2026-02-12">
+                                    12 Feb, 2026
+                                </time>
+                            </div>
+
+                            <a href="#" class="article-read-more">Read More</a>
+                        </article>
+                        <!-- Article 06 -->
+                        <article class="article-box">
+                            <figure class="article-image">
+                                <img src="./Assets/Images/Team/01.jpg" alt="Article image">
+                            </figure>
+
+                            <div class="article-text">
+                                <h3 class="article-heading">Project Milestone</h3>
+                                <p class="article-subheading">Construction Progress</p>
+                                <time class="article-date" datetime="2026-02-12">
+                                    12 Feb, 2026
+                                </time>
+                            </div>
+
+                            <a href="#" class="article-read-more">Read More</a>
+                        </article>
+
+                    </div>
+                </div>
             </div>
         </section>
+
         <!-- Article Section End-->
 
         <!-- About Section Start-->

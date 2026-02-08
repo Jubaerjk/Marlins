@@ -318,7 +318,9 @@ ul li {
    Article Section Start
 ========================================================== */
 
-/* ===== Article Section ===== */
+/* ===============================
+   ARTICLES SECTION
+================================ */
 #articles {
     padding: 6rem 0;
 }
@@ -327,16 +329,30 @@ ul li {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-}
 
-/* ===== Slider Viewport ===== */
-.article-content {
     position: relative;
-    overflow: hidden;
-    /* REQUIRED */
 }
 
-/* ===== Slider Track (GRID stays) ===== */
+/* ===============================
+   SECTION TITLE
+================================ */
+.article-title {
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===============================
+   SLIDER VIEWPORT
+================================ */
+.article-content {
+    overflow: hidden;
+    /* REQUIRED for sliding */
+}
+
+/* ===============================
+   SLIDER TRACK (GRID)
+================================ */
 .article-track {
     display: grid;
     grid-auto-flow: column;
@@ -347,7 +363,9 @@ ul li {
     will-change: transform;
 }
 
-/* ===== Article Card ===== */
+/* ===============================
+   ARTICLE CARD
+================================ */
 .article-box {
     background-color: rgb(39, 39, 39);
     display: flex;
@@ -357,6 +375,8 @@ ul li {
     overflow: hidden;
     box-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    position: relative;
 }
 
 .article-box:hover {
@@ -364,7 +384,9 @@ ul li {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
 }
 
-/* ===== Image ===== */
+/* ===============================
+   IMAGE
+================================ */
 .article-box img {
     padding: 0.5rem;
     border-radius: 0.6rem;
@@ -373,7 +395,9 @@ ul li {
     object-fit: cover;
 }
 
-/* ===== Text ===== */
+/* ===============================
+   TEXT
+================================ */
 .article-text {
     padding: 0 2rem;
 }
@@ -396,7 +420,9 @@ ul li {
     opacity: 0.6;
 }
 
-/* ===== Read More ===== */
+/* ===============================
+   READ MORE BUTTON
+================================ */
 .article-read-more {
     margin-top: auto;
     background-color: #4b4b4b;
@@ -404,7 +430,7 @@ ul li {
     font-weight: 600;
     padding: 1rem 3.6rem;
     text-align: center;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .article-read-more:hover {
@@ -412,14 +438,16 @@ ul li {
     color: #000;
 }
 
-/* ===== Slider Controls ===== */
+/* ===============================
+   SLIDER CONTROLS
+================================ */
 .article-slider-controls {
     position: absolute;
+    display: block;
     bottom: -6rem;
     right: 1rem;
-    display: flex;
     gap: 1.5rem;
-    z-index: 10;
+    z-index: 50;
 }
 
 .article-slider-controls button {
@@ -430,13 +458,27 @@ ul li {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .article-slider-controls button:hover {
     background: aqua;
     color: #000;
 }
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 600px) {
+    .article-track {
+        grid-auto-columns: 85%;
+    }
+
+    .article-slider-controls {
+        bottom: -5rem;
+    }
+}
+
 
 
 

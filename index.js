@@ -48,14 +48,17 @@ const prevBtn = document.querySelector('.article-slider-btn-prev');
 const nextBtn = document.querySelector('.article-slider-btn-next');
 
 let index = 0;
-const gap = 32;
-const cardWidth = cards[0].offsetWidth + gap;
+const gap = 32; // must match CSS gap (2rem ≈ 32px)
 
-function updateSlider() {
-    track.style.transform = `translateX(-${index * cardWidth}px)`;
+function getCardWidth() {
+    return cards[0].offsetWidth + gap;
 }
 
+function updateSlider() {
+    track.style.transform = `translateX(-${index * getCardWidth()}px)`;
+}
 
+/* Button navigation */
 nextBtn.addEventListener('click', () => {
     if (index < cards.length - 1) {
         index++;
@@ -70,7 +73,7 @@ prevBtn.addEventListener('click', () => {
     }
 });
 
-
+/* Swipe support */
 let startX = 0;
 
 viewport.addEventListener('touchstart', e => {
@@ -86,6 +89,11 @@ viewport.addEventListener('touchend', e => {
 
     updateSlider();
 });
+
+/* Recalculate on resize */
+window.addEventListener('resize', updateSlider);
+
+
 
 
 
