@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(0, 0, 0);
     font-family: "inter", sans-serif;
     color: #fff;
 }
@@ -317,7 +317,8 @@ ul li {
 /* ========================================================== 
    Article Section Start
 ========================================================== */
-/* head section */
+
+
 #articles {
     padding: 6rem 0;
 }
@@ -328,74 +329,77 @@ ul li {
     gap: 2.4rem;
 }
 
+/* ===== Article Grid ===== */
 .article-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.4rem;
 }
 
+/* ===== Section Title ===== */
 .article-title {
     font-size: 2.4rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* content section */
+/* ===== Article Card ===== */
 .article-box {
-    width: 40rem;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(20, 20, 20);
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
     border-radius: 1.6rem;
+    overflow: hidden;
     box-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.article-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Image ===== */
+.article-box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* ===== Text ===== */
 .article-text {
     padding: 0 2rem;
-}
-
-
-#articles .container .article-box img {
-    border-top-left-radius: 1.2rem;
-    border-top-right-radius: 1.2rem;
-    width: 100%;
-}
-
-.article-divider {
-    display: none;
-    margin: 1.6rem 0;
-    opacity: 0.15;
 }
 
 .article-heading {
     font-size: clamp(1rem, 1.2vw, 1.4rem);
     font-weight: 500;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
 }
 
 .article-subheading {
-    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
     letter-spacing: 0.05rem;
     font-weight: 300;
     margin-bottom: 0.8rem;
 }
 
-.article-body {
+.article-date {
     font-size: clamp(0.9rem, 1vw, 1rem);
     font-weight: 400;
     opacity: 0.6;
 }
 
+/* ===== Read More Button ===== */
 .article-read-more {
-    display: block;
+    margin-top: auto;
     background-color: #4b4b4b;
     font-size: clamp(1.2rem, 1.2vw, 1.4rem);
     font-weight: 600;
-    padding: 0.8rem 3.6rem;
-    border-bottom-left-radius: 0.6rem;
-    border-bottom-right-radius: 0.6rem;
+    padding: 1rem 3.6rem;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .article-read-more:hover {
@@ -403,9 +407,16 @@ ul li {
     color: #000;
 }
 
+
+
+
+
 /* ========================================================== 
    About Section Start
 ========================================================== */
+#about {
+    padding: 6rem 0;
+}
 
 #about .container {
     /* CSS Layout */
@@ -564,6 +575,8 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    width: 95%;
     z-index: 10;
 }
 
@@ -673,6 +686,130 @@ ul li {
     background-color: #0b5ed7;
     color: #fff;
 }
+
+/* ============================================================
+   Projects Section Start
+============================================================ */
+#projects {
+    /* color */
+    background-color: #272727;
+    padding: 4.8rem 0;
+}
+
+#projects .container .projects-items-box {
+    /* CSS Layout */
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+    border-radius: 0.8rem;
+}
+
+#projects .container .project-item {
+    /* background image */
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+        url("../Images/Projects/Lasaco_LA-SPACE_G+10/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* sizing */
+    width: 30rem;
+    aspect-ratio: 4 / 5;
+    /* 1.25 height ratio */
+    padding: 2.4rem;
+    border-radius: 0.8rem;
+
+    /* positioning */
+    position: relative;
+}
+
+#projects .container .item-02 {
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+        url("../Images/Projects/Lasaco_LA-SPACE_G+10/2.jpg");
+}
+
+#projects .container .item-03 {
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+        url("../Images/Projects/Lasaco_LA-SPACE_G+10/3.jpg");
+}
+
+#projects .container .item-04 {
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+        url("../Images/Projects/Lasaco_LA-SPACE_G+10/4.jpg");
+}
+
+#projects .container .project-item .project-item-content {
+    /* color */
+    background-color: rgba(0, 0, 0, 0.7);
+
+    /* box-model */
+    max-height: 50%;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+
+    /* CSS Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.6rem;
+
+    /* position */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem;
+}
+
+.project-title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.project-location {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.project-info-list {
+    line-height: 1.8;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.project-info-title {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.project-btn {
+    /* color */
+    background-color: transparent;
+    color: rgb(207, 207, 207);
+
+    /* font */
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    /* box-model */
+    padding: 0.8rem 0;
+    border: 0.1rem solid var(--hover-color);
+    border-radius: 0.8rem;
+}
+
+/* Project Section End */
 
 
 
