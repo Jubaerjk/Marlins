@@ -1017,7 +1017,7 @@ ul li {
 }
 
 .company-title {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
@@ -1054,7 +1054,7 @@ ul li {
 }
 
 .newsletter-title {
-    font-size: 1.25rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -1072,7 +1072,7 @@ ul li {
     border-radius: 999px;
     border: none;
     outline: none;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     background: #020617;
     color: #e5e7eb;
 }
