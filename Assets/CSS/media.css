@@ -25,7 +25,7 @@ Large Desktop Devices (1200px+)
 
 @media (max-width: 480px) {
   .container {
-    width: 98%;
+    max-width: 98%;
   }
 }
 
@@ -117,7 +117,6 @@ Large Desktop Devices (1200px+)
 /* ===================================================================== */
 @media (max-width: 76.8rem) {
   #about .container {
-    padding-top: 6.4rem;
     flex-direction: column-reverse;
     text-align: center;
   }
@@ -144,8 +143,12 @@ Large Desktop Devices (1200px+)
   }
 
   #about .section-img {
-    width: 100%;
+    max-width: 100%;
     margin: 0 4rem;
+  }
+
+  #about .section-img img {
+    width: 30rem;
   }
 
   #about .container .section-heading {

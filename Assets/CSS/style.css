@@ -470,7 +470,7 @@ ul li {
    About Section Start
 ========================================================== */
 #about {
-    padding: 6rem 0;
+    padding: clamp(4rem, 6vw, 8rem) 0;
 }
 
 #about .container {
@@ -551,9 +551,6 @@ ul li {
 .services {
     /* box-model */
     padding: clamp(4rem, 6vw, 8rem) 0;
-
-    /* color */
-    background-color: #393E46;
 }
 
 .service-cards-box {
@@ -749,7 +746,7 @@ ul li {
 ============================================================ */
 #projects {
     /* color */
-    background-color: #272727;
+    background-color: #000000;
     padding: 4.8rem 0;
 }
 
@@ -881,251 +878,108 @@ ul li {
 /* Project Section End */
 
 
-/* ==================================================================
-   Team Section
-================================================================== */
-#team {
-    padding: 4.8rem 0;
-}
+/* Footer Section  */
 
-.team-grid {
+
+.footer-navlink {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 2.4rem;
+    padding: 4.8rem 0;
+    background-color: #000000;
+    font-weight: 600;
 }
 
-#team .team-card {
-    background-color: #252525;
-    /* box-model */
-    width: 36rem;
-    padding: 0.8rem;
-    border-radius: 0.6rem;
-}
-
-#team .team-card-image img {
-    width: 100%;
-    border-radius: 0.6rem;
-}
-
-#team .team-card-content {
-    padding: 1rem;
-    border-radius: 0.6rem;
-}
-
-#team .team-card-content .team-name {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fff;
-}
-
-#team .team-card-content .team-role {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 1rem;
-}
-
-#team .team-card-content .team-description {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 1.2rem;
-}
-
-#team .team-card-content .team-social {
+.footer-nav {
     display: flex;
+    flex-direction: column;
     gap: 0.8rem;
 }
 
-#team .team-card-content .team-social a {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.6rem;
-    font-weight: 600;
+.footer-title {
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
+    font-weight: 700;
+    color: #868e96;
+    margin-bottom: 0.8rem;
+}
+
+.footer-nav a {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #f8f9fa;
     text-decoration: none;
     transition: var(--transition);
 }
 
-#team .team-card-content .team-social a:hover,
-#team .team-card-content .team-social a:focus-visible {
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
     color: var(--hover-color);
     transition: var(--transition);
 }
 
-/* Team section End */
-
-/* ==================================================================
-   Contact Section
-================================================================== */
-.contact {
-    padding: clamp(4rem, 8vw, 6rem) 0;
-    background: #0f172a;
-    /* dark slate */
-    color: #e5e7eb;
-}
-
-/* Layout */
-.contact-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(2rem, 5vw, 4rem);
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* ================================
-   Company Info
-================================ */
-.contact-company {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    flex: 1 1 320px;
-}
-
-.company-logo {
-    width: 90px;
-    height: 90px;
-    flex-shrink: 0;
-}
-
-.company-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.company-title {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-}
-
-/* Social Links */
-.social-links {
-    display: flex;
-    gap: 0.75rem;
-}
-
-.social-links a {
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.08);
-    color: #e5e7eb;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    background: #38bdf8;
-    color: #020617;
-    transform: translateY(-4px);
-}
-
-/* ================================
-   Newsletter
-================================ */
-.contact-newsletter {
-    flex: 1 1 320px;
-}
 
 .newsletter-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    font-size: clamp(1.6rem, 2vw, 2.4rem);
+    font-weight: 700;
+    color: #868e96;
+    margin-bottom: 0.8rem;
 }
 
-/* Form */
 .newsletter-form {
     display: flex;
-    gap: 0.75rem;
-    max-width: 420px;
+    gap: 0.8rem;
 }
 
 .newsletter-form input {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border-radius: 999px;
-    border: none;
-    outline: none;
-    font-size: 1.2rem;
-    background: #020617;
-    color: #e5e7eb;
-}
-
-.newsletter-form input::placeholder {
-    color: #94a3b8;
+    padding: 0.8rem;
+    border: 0.1rem solid var(--hover-color);
+    border-radius: 0.8rem;
 }
 
 .newsletter-form button {
-    padding: 0.75rem 1.4rem;
-    border-radius: 999px;
-    border: none;
-    cursor: pointer;
-    background: #38bdf8;
-    color: #020617;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.8rem;
+    border: 0.1rem solid var(--hover-color);
+    border-radius: 0.8rem;
+    background-color: var(--hover-color);
+    color: #fff;
 }
 
-.newsletter-form button:hover {
-    background: #0ea5e9;
-    transform: translateY(-2px);
+.footer-bottom {
+    padding: 2.4rem 0;
+    background-color: rgba(58, 58, 58, 0.6);
 }
 
-/* ================================
-   Accessibility Helper
-================================ */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+.footer-bottom-container {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* ================================
-   Responsive
-================================ */
-@media (max-width: 768px) {
-    .contact-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-company {
-        flex-direction: column;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
-    }
-
-    .newsletter-form button {
-        width: 100%;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-}
-
-
-
-
-
-
-footer p {
+.footer-bottom p {
     font-size: 1.4rem;
-    text-align: center;
-    padding: 1.2rem 0;
-    background-color: #000000;
-    font-weight: 600;
+    font-weight: 400;
+    color: #f8f9fa;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.footer-social-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: var(--transition);
+    transform: scale(1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus-visible {
+    color: var(--hover-color);
+    transition: var(--transition);
+    transform: scale(1.25);
 }

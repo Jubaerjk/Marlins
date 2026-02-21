@@ -33,7 +33,7 @@ const prevBtn = document.querySelector('.article-slider-btn-prev');
 const nextBtn = document.querySelector('.article-slider-btn-next');
 
 let index = 0;
-const gap = 32; // must match CSS gap (2rem ≈ 32px)
+const gap = 24; // must match CSS gap (2rem ≈ 32px)
 
 function getCardWidth() {
     return cards[0].offsetWidth + gap;
